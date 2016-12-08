@@ -5,7 +5,7 @@ body{background: #ddd;overflow-x: hidden;}
 /* module: sliders */
 #sliders{
     border-radius: 5px;
-    height:300px;
+    height:425px;
     box-shadow: 1px 1px 4px #666;
     padding: 1%;
     background: #fff;
@@ -14,6 +14,7 @@ body{background: #ddd;overflow-x: hidden;}
     width: 100%;
     overflow: hidden;
 }
+/*设定图片容器的大小，500%刚好给5张图片使用*/
 #sliders .inner{
     width: 500%;
     transiton: all 1s linear;
@@ -24,7 +25,7 @@ body{background: #ddd;overflow-x: hidden;}
     width: 20%;
 }
 
-/*这里是设置图片上显示的字
+/*这里是设置图片
 -webkit-transform: translateZ(0);位定义角度，这里是定义 3D 转换，只是用 Z 轴的值。
 */
 #sliders article .info{
@@ -39,6 +40,7 @@ body{background: #ddd;overflow-x: hidden;}
     -webkit-transition: opacity 0.1s ease-out;
 }
 
+/*这里是设置图片显示的名字和连接*/
 #sliders article .info h1{
     font-size: 22px;    
     font-weight: bold;
@@ -51,9 +53,9 @@ body{background: #ddd;overflow-x: hidden;}
 
 /* module: controls */
 #controls{
-    height: 50px;
+    height: 20px;
     width: 100%;
-    margin-top: -25%;
+    margin-top: -26%;
 }
 #controls label{
     display: none;
@@ -69,7 +71,7 @@ body{background: #ddd;overflow-x: hidden;}
 /* module: active */
 #active{
     width: 100%;
-    margin-top: 23%;
+    margin-top: 22.5%;
     text-align: center;
 }
 #active label{
@@ -85,7 +87,7 @@ body{background: #ddd;overflow-x: hidden;}
 }
 
 /* input checked change style */
-/* 如果selector1被需要选择了，那么我要在#active label:nth-child(1)设定为黑点*/
+/* 如果slider1被需要选择了，那么我要在#active label:nth-child(1)设定为黑点*/
 #slider1:checked ~ #active label:nth-child(1),
 #slider2:checked ~ #active label:nth-child(2),
 #slider3:checked ~ #active label:nth-child(3),
@@ -94,7 +96,7 @@ body{background: #ddd;overflow-x: hidden;}
     background: #333;
 }
 
-/* 如果selector1被需要选择了，那么我要在#controls label:nth-child(5)放置我的prev.jpg */
+/* 如果slider1被需要选择了，那么我要在#controls label:nth-child(5)放置我的prev.jpg */
 #slider1:checked ~ #controls label:nth-child(5),
 #slider2:checked ~ #controls label:nth-child(1),
 #slider3:checked ~ #controls label:nth-child(2),
@@ -106,7 +108,7 @@ body{background: #ddd;overflow-x: hidden;}
     margin-left: -70px;
 }
 
-/* 如果selector1被需要选择了，那么我要在#controls label:nth-child(2)放置我的next.jpg */
+/* 如果slider1被需要选择了，那么我要在#controls label:nth-child(2)放置我的next.jpg */
 #slider1:checked ~ #controls label:nth-child(2),
 #slider2:checked ~ #controls label:nth-child(3),
 #slider3:checked ~ #controls label:nth-child(4),
@@ -118,7 +120,7 @@ body{background: #ddd;overflow-x: hidden;}
     margin-right: -70px;
 }
 
-/* 如果selector1被需要选择了，那么我要在 #sliders article:nth-child(1)下class为info的div添加样式
+/* 如果slider1被需要选择了，那么我要在 #sliders article:nth-child(1)下class为info的div添加样式
 opacity 为不透明
 
 transition 属性是一个简写属性，用于设置四个过渡属性：

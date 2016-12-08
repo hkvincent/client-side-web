@@ -7,7 +7,7 @@
 
 </head>
 
-<body background="../photo/wallpaper2.jpg">
+<body  background="../photo/wallpaper1.jpg">
 
 	<script type="text/javascript" src="../common/web-nevigation.js"></script>
 	<div class="page-header">
@@ -17,15 +17,6 @@
 	</div>
 
 	<div class="container">
-		<div class="row clearfix">
-			<div class="col-md-12 column">
-				<img id="scream" src="../photo/note7.jpg" alt="The Scream"
-					height="277">
-				<p>
-					<button onclick="myCanvas()">more</button>
-				</p>
-			</div>
-		</div>
 		<div class="row clearfix">
 			<div class="col-md-4 column">
 				<h2>
@@ -48,9 +39,6 @@
 							id="findmore" src="../photo/findmore.png" alt="findmore"
 							width="150" height="40">
 					</p> </a>
-				<p>
-					<a class="btn" href="#">View details »</a>
-				</p>
 			</div>
 			<div class="col-md-4 column">
 				<h2>
@@ -113,19 +101,5 @@
 		});
 	</script>
 
-	<script>
-		function myCanvas() {
-			var c = document.getElementById("myCanvas");
-			var ctx = c.getContext("2d");
-			var img = document.getElementById("scream");
-			ctx.drawImage(img, 5, 10);
-		}
-
-		var c = document.getElementById("myCanvas");
-		var ctx = c.getContext("2d");
-		ctx.fillStyle = "blue";
-		ctx.font = "35px Arial";
-		ctx.fillText("note 7", 40, 100);
-	</script>
 </body>
 </html>
