@@ -1,0 +1,120 @@
+
+<html>
+<head>
+
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<script type="text/javascript" src="../common/all.js"></script>
+<style>
+
+div.contact ul li{ 
+        float: left ;
+        margin: 50px 200 50px 0;
+        font-family: Arial;
+        font-size: 20px;
+        color:#7000ff;
+	display:inline ; 
+}
+
+
+div.contact1 { 
+        float: left ;
+        margin: 30px 400 50px 200;
+        
+	display:inline ; 
+}
+
+div.contact2 { 
+        float: left ;
+        margin: 60px 10 50px 10;
+        
+	display:inline ; 
+}
+
+
+
+</style>
+<head>
+
+<body background="../photo/wallpaper1.jpg">
+    <header>
+    <script type="text/javascript" src="../common/web-nevigation.js"></script>
+	<h1>contact us</h1>
+	
+	<div class="contact">
+	<nav>
+	<ul>
+	  <li><p id="demo" onclick="showEamil()">chan wing sing  11501054</p></li>
+	  <li><p id="demo1" onclick="showEamil()">tsang ka lok  11501041</li>
+	  <li><p id="demo2" onclick="showEamil()">wong choi sang  11501028</li>
+	 </ul>
+	 </nav>
+<script>
+	var flag = false;
+	function showEamil() {
+	if(flag){
+		 document.getElementById("demo").innerHTML = "chan wing sing  11501054";
+	
+	    document.getElementById("demo1").innerHTML = "tsang ka lok  11501041";
+	
+	    document.getElementById("demo2").innerHTML = "wong choi sang  11501028";
+	    flag = false;
+	
+	}else{
+	    document.getElementById("demo").innerHTML = "hkvincentchan@gmail.com";
+	
+	    document.getElementById("demo1").innerHTML = "loks111@yahoo.com.hk";
+	
+	    document.getElementById("demo2").innerHTML = "tophand2000@gmail.com";
+	    
+	    flag = true;
+	    }
+	    
+	}
+</script>
+</div>
+
+
+
+<div class="contact1">
+
+<a><p class="Ubuntu_white_16"><a href="https://www.facebook.com/">
+<img id="facebook" src="../photo/fb.png" alt="facebook" width="50" height="50"></p></a>
+
+<a><p class="Ubuntu_white_16"><a href="https://plus.google.com/">
+<img id="google" src="../photo/google.jpg" alt="google" width="50" height="50"></p></a>
+
+<a><p class="Ubuntu_white_16"><a href="https://twitter.com/?lang=zh-tw">
+<img id="twitter" src="../photo/twitter.png" alt="twitter" width="50" height="50"></p></a>
+
+</div>
+
+
+
+
+<div class="contact2">
+<p class="Ubuntu_white_16">welcome to contact us when you have any question. <br/>
+		click follow:</p> 
+		
+		<a href="mailto:funnyandmusic@gamil.com">contact us </a>
+
+
+
+<footer>
+	<aside>
+		<p class="Ubuntu_white_16"><a href="../home.html">
+<img id="homebutton" src="../photo/homebutton.png" alt="homebutton" width="50" height="50"><br/></p>
+    </aside>
+</footer>
+
+</div>
+<script type="text/javascript">
+$(function (){
+$("#home").removeAttr("class");
+$("#cu").attr("class","active");
+
+});
+
+</script>
+</body>
+</html>
