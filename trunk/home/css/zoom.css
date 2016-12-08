@@ -1,0 +1,111 @@
+/* 
+the Animations
+.animation {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example; Safari 4.0 - 8.0
+    -webkit-animation-duration: 4s; Safari 4.0 - 8.0
+    -webkit-animation-iteration-count: infinite; Safari 4.0 - 8.0
+    animation-name: vincent;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+Safari 4.0 - 8.0
+@-webkit-keyframes vincent {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+Standard syntax
+@keyframes vincent {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+.transition {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s, height 4s; For Safari 3.1 to 6.0
+    transition: width 2s, height 4s;
+}
+
+:hover {
+    width: 300px;
+    height: 300px;
+}
+ */
+
+
+
+
+
+
+
+
+/* .gallery {
+  width: 890px;
+  margin: 30px auto;
+  padding: 5px;
+  background: #333;
+}*/
+
+.gallery > div {
+  /* position: relative;
+  float: left; */
+  padding: 5px;
+} 
+
+#tools{
+	width: 75%;
+	margin-left: 150px;
+	
+}
+
+.gallery > div > img {
+  width: 250px;
+  transition: .1s transform;
+  transform: translateZ(0);
+  /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div > img:hover {
+  transform: scale(1.5, 1.5);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+h1 {
+  margin: 40px 0;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer {
+  margin: 80px 0;
+  text-align: center;
+}
+
